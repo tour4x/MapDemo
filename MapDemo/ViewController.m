@@ -10,7 +10,7 @@
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 
-#define kTileOverlayRemoteServerTemplate    @"http://10.80.25.105/tiles4/{z}/tile{x}_{y}.png" //瓦片图服务器地址
+#define kTileOverlayRemoteServerTemplate    @"http://10.80.25.102/tiles/{z}/tile{x}_{y}.png" //瓦片图服务器地址
 
 #define kTileOverlayRemoteMinZ      15
 #define kTileOverlayRemoteMaxZ      19
@@ -72,7 +72,6 @@
     
     /* boundingMapRect 是用来 设定tileOverlay的可渲染区域. */
     self.tileOverlay.boundingMapRect = MAMapRectWorld;
-    self.tileOverlay.tileSize = CGSizeMake(128, 128);
     
     [self.mapView addOverlay:self.tileOverlay];
     
