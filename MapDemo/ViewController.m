@@ -10,7 +10,7 @@
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 
-#define kTileOverlayRemoteServerTemplate    @"http://10.80.25.105/tiles4/{z}/tile{x}_{y}.png"
+#define kTileOverlayRemoteServerTemplate    @"http://10.80.25.105/tiles4/{z}/tile{x}_{y}.png" //瓦片图服务器地址
 
 #define kTileOverlayRemoteMinZ      15
 #define kTileOverlayRemoteMaxZ      19
